@@ -1,0 +1,37 @@
+{
+    "name": "pxt-microbitApp",
+    "version": "1.1.0",
+    "description": "Extension for using the microbit control APP",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "bluetooth": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "6.0.18",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}
